@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/app_bar"
+                style="@style/Foxandroid.Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:title="Member Registration"
+                app:titleTextColor="@color/black"
+                app:titleTextAppearance="@style/AppBarTitleStyle"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/memberNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Mobile Number:"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/memberNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/mobileNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+
+        <EditText
+            android:id="@+id/mobileNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+        <TextView
+            android:id="@+id/selectRoleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Role"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+        <RadioGroup
+            android:id="@+id/roleRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp">
+
+            <RadioButton
+                android:id="@+id/securityRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security" />
+
+            <RadioButton
+                android:id="@+id/memberRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/subscriptionFeeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscription Fee:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/subscriptionFeeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/depositAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit Amount:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/depositAmountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/loanAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Amount:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/loanAmountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/genderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/otherRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/dobLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth (DOB):"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/dobEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/dateOfJoiningLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Joining:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/dateOfJoiningEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+
+
+        <TextView
+            android:id="@+id/maritalStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marital Status:"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <RadioGroup
+            android:id="@+id/maritalStatusRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <RadioButton
+                android:id="@+id/marriedRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married" />
+
+            <RadioButton
+                android:id="@+id/unmarriedRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unmarried" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/dateOfMarriageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Marriage:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/dateOfMarriageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/casteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caste:"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/casteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:paddingStart="15dp"
+            android:background="@drawable/text_bg"            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caste"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:elevation="10dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/text_bg"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Religion"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:elevation="10dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/text_bg"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/categoryEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:elevation="10dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/text_bg"
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aadhar No."
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/aadharNoEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:elevation="10dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/text_bg"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+
+</ScrollView>
+
